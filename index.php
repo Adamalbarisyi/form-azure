@@ -26,7 +26,7 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "dicodingazurewebserver";
+    $host = "dicodingazurewebserver.database.windows.net";
     $user = "dicodingazure";
     $pass = "Mzbm21417";
     $db = "db_latihan_azure";
