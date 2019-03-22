@@ -26,7 +26,7 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "dicodingazurewebserver.database.windows.net";
+    $host = "dicodingazurewebserver";
     $user = "dicodingazure";
     $pass = "Mzbm21417";
     $db = "db_latihan_azure";
@@ -43,7 +43,7 @@
             $job = $_POST['job'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO dbo.Registration (name, email, job, date) 
+            $sql_insert = "INSERT INTO Registration (name, email, job, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
