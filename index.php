@@ -29,7 +29,7 @@
     $host = "dicodingazurewebserver.database.windows.net";
     $user = "dicodingazure";
     $pass = "Mzbm21417";
-    $db = "db_Dicoding_Azure";
+    $db = "db_latihan_form";
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
