@@ -29,7 +29,7 @@
     $host = "dicodingazurewebserver.database.windows.net";
     $user = "dicodingazure";
     $pass = "Mzbm21417";
-    $db = "db_latihan_azure";
+    $db = "db_Dicoding_Azure";
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -43,7 +43,7 @@
             $job = $_POST['job'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO Registration (name, email, job, date) 
+            $sql_insert = "INSERT INTO dbo.Registration (name, email, job, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
