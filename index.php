@@ -19,17 +19,17 @@
  <h1>Register here!</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
-       Name  <input type="text" name="name" id="name"/></br></br>
+	Name  <input type="text" name="name" id="name"/></br></br>
        Email <input type="text" name="email" id="email"/></br></br>
        Job <input type="text" name="job" id="job"/></br></br>
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "dicodingazurewebserver.database.windows.net";
-    $user = "dicodingazure";
-    $pass = "Mzbm21417";
-    $db = "db_latihan_azure";
+    $host = "dicodingappserver01.database.windows.net";
+    $user = "adam";
+    $pass = "Qwerty123456";
+    $db = "Dicodingdb";
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
